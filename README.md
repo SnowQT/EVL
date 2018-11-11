@@ -1,5 +1,5 @@
 # Emergency Vehicle Lighting
-A new approche to vehicle liting in FiveM
+A new approach to vehicle lighting in FiveM
 ## Script Specific
 
 ### Natives:
