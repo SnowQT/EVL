@@ -1,5 +1,6 @@
 # Emergency Vehicle Lighting
 A new approach to vehicle lighting in FiveM
+#### Discord: https://discord.gg/NGaWZGB
 ## Script Specific
 
 ### Natives:
