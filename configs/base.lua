@@ -1,0 +1,7 @@
+EVL["Base"] = {
+
+	["LoadPatterns"] = {
+		"testingpattern"
+	}
+
+}
