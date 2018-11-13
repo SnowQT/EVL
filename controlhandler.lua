@@ -59,18 +59,9 @@ Citizen.CreateThread(function()
 end)
 
 function DisableKeyboardKeys(Keys)
-	DisableControlAction(0, Keys["KeyModifier"], true)
-	DisableControlAction(0, Keys["ChangeLightStage"], true)
-	DisableControlAction(0, Keys["ChangePrimaryPattern"], true)
-	DisableControlAction(0, Keys["ChangeSecondaryPattern"], true)
-	DisableControlAction(0, Keys["ChangeTrafficPattern"], true)
-	DisableControlAction(0, Keys["WarningLights"], true)
-	DisableControlAction(0, Keys["SecondaryLights"], true)
-	DisableControlAction(0, Keys["PrimaryLights"], true)
-	DisableControlAction(0, Keys["TogglePanel"], true)
-	DisableControlAction(0, Keys["SirenOne"], true)
-	DisableControlAction(0, Keys["SirenTwo"], true)
-	DisableControlAction(0, Keys["SirenThree"], true)
+	for i in pairs(Keys) do
+		DisableControlAction(0, Keys[i], true)
+	end
 end
 
 function DisableControllerButtons(Buttons)
