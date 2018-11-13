@@ -26,7 +26,7 @@ Citizen.CreateThread(function()
 					elseif IsDisabledControlJustPressed(0, Keys["SecondaryLights"]) then
 						print("Toggle Secondary Lights")
 					elseif IsDisabledControlJustPressed(0, Keys["PrimaryLights"]) then
-						print("Toggle Primary Lights")
+						LightsToggle()
 					elseif IsDisabledControlJustPressed(0, Keys["SirenOne"]) then
 						print("Toggle Siren One")
 					elseif IsDisabledControlJustPressed(0, Keys["SirenTwo"]) then

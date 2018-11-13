@@ -28,6 +28,7 @@ end)
 ---------------------------------------------------------------------------
 Citizen.CreateThread(function()
 	DecorRegister("VehicleController", 3)
+	--SetVehRadioStation(GetVehiclePedIsIn(GetPlayerPed(-1), false), 0)
 	while true do
 		if EVL_Ready then
 			local ped = GetPlayerPed(-1)
