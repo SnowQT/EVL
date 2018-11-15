@@ -12,7 +12,7 @@ Citizen.CreateThread(function()
 				DisableKeyboardKeys(Keys)
 
 				if not IsDisabledControlPressed(0, Keys["KeyModifier"]) then
-					
+				    
 					if IsDisabledControlJustPressed(0, Keys["ChangeLightStage"]) then
 						print("Increase Light Stage")
 					elseif IsDisabledControlJustPressed(0, Keys["ChangePrimaryPattern"]) then
@@ -26,13 +26,13 @@ Citizen.CreateThread(function()
 					elseif IsDisabledControlJustPressed(0, Keys["SecondaryLights"]) then
 						print("Toggle Secondary Lights")
 					elseif IsDisabledControlJustPressed(0, Keys["PrimaryLights"]) then
-						print("Toggle Primary Lights")
+						LightsToggle()
 					elseif IsDisabledControlJustPressed(0, Keys["SirenOne"]) then
-						print("Toggle Siren One")
+						SirenChange(1)
 					elseif IsDisabledControlJustPressed(0, Keys["SirenTwo"]) then
-						print("Toggle Siren Two")
+						SirenChange(2)
 					elseif IsDisabledControlJustPressed(0, Keys["SirenThree"]) then
-						print("Toggle Siren Three")
+						SirenChange(3)
 					end
 
 				else
