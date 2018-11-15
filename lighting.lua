@@ -2,13 +2,13 @@
 -- Handles Entered Vehicle Lighting
 ---------------------------------------------------------------------------
 local lightsOn = false
-local p = "testingpattern"
+local currentPattern = Patterns[1]
 
 function LightsToggle()
 	lightsOn = not lightsOn
 	if not lightsOn then
-		local LightingData = Patterns["testingpattern"]["Data"]
-		local LightingPattern = Patterns["testingpattern"]["Pattern"]
+		local LightingData = Patterns[currentPatern]["Data"]
+		local LightingPattern = Patterns[currentPattern]["Pattern"]
 	
 		for a = 1, #LightingPattern do
 			for c = 1, #LightingPattern[a] do
@@ -22,8 +22,8 @@ Citizen.CreateThread(function()
 	while true do
 		if currentVehicle ~= 0 and EVL_Ready and lightsOn then
 
-			local LightingData = Patterns["testingpattern"]["Data"]
-			local LightingPattern = Patterns["testingpattern"]["Pattern"]
+			local LightingData = Patterns[currentPattern]["Data"]
+			local LightingPattern = Patterns[currentPattern]["Pattern"]
 
 			for a = 1, #LightingPattern do
 				for b = 1, #LightingPattern[a] do
