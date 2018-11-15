@@ -15,3 +15,8 @@ AddEventHandler("EVL:RequestConfigs", function()
 
 	TriggerClientEvent("EVL:LoadConfigs", src, EVL, patterns)
 end)
+
+RegisterServerEvent('ELV:SyncSiren')
+AddEventHandler('ELV:SyncSiren', function(vehicle, siren)
+    TriggerClientEvent('ELV:SyncSiren', -1, vehicle, siren)
+end)
