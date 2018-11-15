@@ -29,11 +29,11 @@ Citizen.CreateThread(function()
 				for b = 1, #LightingPattern[a] do
 					SetVehicleMod(currentVehicle, LightingPattern[a][b], 1, false)
 				end
-				Citizen.Wait(LightingData.TimeBetween)
+				Citizen.Await(LightingData.TimeBetween)
 				for c = 1, #LightingPattern[a] do
 					SetVehicleMod(currentVehicle, LightingPattern[a][c], 0, false)
 				end
-				Citizen.Wait(LightingData.TimeNext)
+				Citizen.Await(LightingData.TimeNext)
 			end
 
 		end
