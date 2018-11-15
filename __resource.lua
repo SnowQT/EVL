@@ -16,4 +16,5 @@ server_script "configs/keys.lua"
 --[[ Client ]]--
 client_script "client.lua"
 client_script "lighting.lua"
+client_script "sirens.lua"
 client_script "controlhandler.lua"
