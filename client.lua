@@ -61,7 +61,7 @@ end)
 function SetVehicleLightingColors(vehicle)
 	for a = 1, #EVL["Vehicles"] do
 		if GetHashKey(EVL["Vehicles"][a].model) == GetEntityModel(vehicle) then
-			local colors = {["one"] = {["red"] = 16, ["blue"] = 53}, ["two"] = {["red"] = 28, ["blue"] = 70}}
+			local colors = {["one"] = {["red"] = 16, ["blue"] = 53, ["amber"] = 28}, ["two"] = {["red"] = 28, ["blue"] = 70, ["amber"] = 38}}
 			local color_one = string.lower(EVL["Vehicles"][a].color_one)
 			local color_two = string.lower(EVL["Vehicles"][a].color_two)
 
