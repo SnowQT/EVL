@@ -6,7 +6,7 @@ A new approach to vehicle lighting in FiveM
 
 ### Natives:
   - (Secondary) https://runtime.fivem.net/doc/natives/#_0x81592BE4E3878728
-  ```SetVehicleInteriorColour()```
+  ```SetVehicleModColor_2()```
   - (Dashboard) https://runtime.fivem.net/doc/natives/#_0x7D1464D472D32136
   ```SetVehicleInteriorColour()```
   
